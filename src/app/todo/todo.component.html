@@ -1,0 +1,10 @@
+<div
+  class="mx-auto w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700"
+>
+  <app-todo-form (addTask)="addTask($event)"></app-todo-form>
+  <app-todo-list
+    [tasks]="taskArray"
+    (deleteTask)="deleteTask($event)"
+    (toggleDone)="toggleDone($event)"
+  ></app-todo-list>
+</div>

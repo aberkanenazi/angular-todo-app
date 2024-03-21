@@ -1,0 +1,31 @@
+<form
+  (ngSubmit)="onAddTask(taskForm)"
+  #taskForm="ngForm"
+  class="space-y-6"
+  action="#"
+>
+  <h5 class="text-xl font-medium text-gray-900 dark:text-white">Todo List</h5>
+  <div>
+    <label
+      for="todo"
+      class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+    >
+      Todo
+    </label>
+    <div class="mt-1">
+      <input
+        type="text"
+        id="todo"
+        ngModel
+        name="todo"
+        class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300"
+      />
+    </div>
+  </div>
+  <button
+    type="submit"
+    class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:bg-indigo-500"
+  >
+    Add Todo
+  </button>
+</form>
